@@ -152,7 +152,7 @@ export function AiOutputPanel({
               />
             </>
           ) : (
-            <div className="prose prose-sm max-w-none text-foreground prose-headings:text-foreground prose-strong:text-foreground prose-a:text-primary">
+            <div className="markdown-body">
               <ReactMarkdown>{content}</ReactMarkdown>
             </div>
           )
