@@ -27,13 +27,13 @@ type Props = {
   content: string;
   onChange: (value: string) => void;
   isLoading: boolean;
-  error?: string | null;
-  onRegenerate?: () => void;
+  error?: string | null | undefined;
+  onRegenerate?: (() => void) | undefined;
   onClear: () => void;
-  onRefine?: (key: string) => void;
-  refinements?: RefinementOption[];
+  onRefine?: ((key: string) => void) | undefined;
+  refinements?: RefinementOption[] | undefined;
   emptyStateMessage: string;
-  loadingMessage?: string;
+  loadingMessage?: string | undefined;
 };
 
 export function AiOutputPanel({
